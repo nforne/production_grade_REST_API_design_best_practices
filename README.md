@@ -1,6 +1,6 @@
 # Production_grade_REST_API_design_best_practices with NodeJS and Express 
 
-- design principles are cross technology applicable - transferable!
+- design principles are cross technology applicable - transferrable!
 
 Production grade REST API design practice - best practices
 - scalable
