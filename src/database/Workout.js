@@ -16,6 +16,5 @@ const createNewWorkout = (newWorkout) => {
 
 module.exports = {
   getAllWorkouts,
-
   createNewWorkout,
 };

@@ -2,7 +2,7 @@ const workoutService = require("../services/workoutService");
 
 const getAllWorkouts = (req, res) => {
   const allWorkouts = workoutService.getAllWorkouts();
-  res.send({ code:200, status: "OK", data: allWorkouts });
+  res.status(200).send({status: "OK", data: allWorkouts });
 };
 
 const getOneWorkout = (req, res) => {
@@ -13,7 +13,7 @@ const getOneWorkout = (req, res) => {
 const createNewWorkout = (req, res) => {
   const { body } = req;
   if (!body.name || !body.mode || !body.equipment || !body.exercises || !body.trainerTips) {
-    return;
+    return; // better yet, use express-validator
   }
   const newWorkout = {
     name: body.name,
