@@ -10,6 +10,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
 const v1WorkoutRouter = require('./v1/routes/workoutRoutes')
+
 app.use('/api/v1/workouts', v1WorkoutRouter);
 
 app.listen(PORT, () => {
